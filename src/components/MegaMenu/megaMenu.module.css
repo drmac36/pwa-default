@@ -1,0 +1,16 @@
+.navHeader {
+	composes: dOnly_hidden from global;
+	composes: mOnly_flex from global;
+	composes: px-5 from global;
+	composes: py-4 from global;
+	border-bottom: 1px solid rgba(0,0,0,0.11);
+}
+.navTitle {
+	composes: flex-1 from global;
+	composes: uppercase from global;
+	composes: items-center from global;
+	composes: font-bold from global;
+}
+.menuBtn {
+	composes: w-[30px] from global;
+}

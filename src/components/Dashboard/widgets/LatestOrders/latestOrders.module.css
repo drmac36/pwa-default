@@ -1,0 +1,18 @@
+.orders {
+	composes: border from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+	composes: bg-colorWhite from global;
+}
+.item, .tableTitles {
+	composes: flex from global;
+	composes: justify-center from global;
+	composes: border-b from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+}
+.value, .state, .tableTitle {
+	composes: bs-[1px] from global;
+	composes: p-2 from global;
+	composes: w-3/12 from global;
+}

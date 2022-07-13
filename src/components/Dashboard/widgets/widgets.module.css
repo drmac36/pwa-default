@@ -1,0 +1,65 @@
+.root {
+	composes: mb-8 from global;
+	composes: rounded-[8px] from global;
+	composes: bg-colorGrayBack from global;
+	composes: border from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+}
+.header {
+	composes: flex from global;
+	composes: w-full from global;
+	composes: items-center from global;
+	composes: text-colorDefault from global;
+	composes: border-b from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+}
+.headerIcon {
+	composes: w-16 from global;
+	composes: h-16 from global;
+	composes: flex from global;
+	composes: items-center from global;
+	composes: justify-center from global;
+	composes: be-[1px] from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+}
+.btnToggle {
+	composes: w-16 from global;
+	composes: h-16 from global;
+	composes: flex from global;
+	composes: items-center from global;
+	composes: justify-center from global;
+	composes: bs-[1px] from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+}
+.title {
+	composes: flex-1 from global;
+	composes: px-4 from global;
+}
+.link {
+	composes: underline from global;
+}
+.body {
+	composes: border-b from global;
+	composes: border-colorGray from global;
+	composes: border-solid from global;
+	composes: p-4 from global;
+}
+.bodyClosed {
+	composes: body;
+	composes: hidden from global;
+}
+.toggleIcon {
+	composes: primary-anime from global;
+}
+.toggleIconOpened {
+	composes: toggleIcon;
+	composes: rotate-90 from global;
+}
+.footer {
+	composes: text-center from global;
+	composes: p-4 from global;
+}

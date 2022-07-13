@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+	--color-brand-dark: 239 41 41;
+}
+.dark {
+	--color-primary: #fff;
+    --color-secondary: #ccc;
+    --color-gold: #ae9a64;
+    --color-graph: #eee;
+    --color-gray: #333;
+    --color-blue: #fff;
+    --color-white: #222;
+}
+.dark main {
+	--color-brand-dark: 255 255 255;
+	--fill: #222;
+	--stroke: #fff;
+}
+.dark .bg-header {
+	--tw-bg-opacity: 1;
+}
+
+li {
+	list-style: none;
+}
+/*
+.slick-slider {
+	width: calc(100% - 100px);
+	height: calc(100% - 40px);
+}
+.slick-track {
+	display: flex;
+}
+*/

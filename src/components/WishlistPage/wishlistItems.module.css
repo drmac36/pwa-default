@@ -1,0 +1,5 @@
+.root {
+    composes: flex-wrap from global;
+    composes: flex from global;
+    composes: -mx-4 from global;
+}

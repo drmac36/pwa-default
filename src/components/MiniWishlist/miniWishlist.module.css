@@ -1,0 +1,85 @@
+.arrow {
+    composes: before_bottom-full from global;
+    composes: before_ie-[15px] from global;
+    composes: before_border-8 from global;
+    composes: before_border-transparent from global;
+    composes: before_border-solid from global;
+    composes: before_content-[''] from global;
+    composes: before_h-[0px] from global;
+    composes: before_w-[0px] from global;
+    composes: before_absolute from global;
+    composes: before_pointer-events-none from global;
+    composes: before_border-b-colorGray from global;
+    composes: before_-ml-[8px] from global;
+}
+.root {
+    composes: absolute from global;
+    composes: top-full from global;
+    composes: ie-[0px] from global;
+    composes: bg-colorWhite from global;
+    composes: w-[300px] from global;
+    composes: max-w-screen from global;
+    composes: rounded-[8px] from global;
+    composes: border from global;
+    composes: border-colorGray from global;
+    composes: border-solid from global;
+    composes: pt-4 from global;
+    composes: arrow;
+}
+.rootClosed {
+    composes: hidden from global;
+}
+
+.footer {
+    composes: text-center from global;
+    composes: p-4 from global;
+}
+
+.link {
+    composes: underline from global;
+}
+
+.items {
+    composes: px-4 from global;
+    composes: border-b from global;
+    composes: border-colorGray from global;
+    composes: border-solid from global;
+}
+.quantity {
+    composes: opacity-100 from global;
+    transition-delay: 64ms;
+    transition-duration: 384ms;
+    transition-property: opacity;
+    transition-timing-function: var(--venia-global-anim-standard);
+}
+
+.quantity_loading {
+    composes: quantity;
+
+    composes: opacity-50 from global;
+}
+
+.price {
+    composes: opacity-100 from global;
+    transition-delay: 64ms;
+    transition-duration: 384ms;
+    transition-property: opacity;
+    transition-timing-function: var(--venia-global-anim-standard);
+}
+
+.price_loading {
+    composes: quantity;
+
+    composes: opacity-50 from global;
+}
+
+.emptyCart {
+    composes: gap-md from global;
+    composes: grid from global;
+    composes: p-md from global;
+}
+
+.emptyMessage {
+    composes: font-bold from global;
+    composes: m-auto from global;
+}

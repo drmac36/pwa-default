@@ -1,0 +1,23 @@
+/** The "thumbnail" is a round pil button below the product image in mobile or
+ * as a thumbnail to the left of the product image in desktop.
+ */
+.root {
+    composes: flex from global;
+    composes: justify-center from global;
+}
+
+.rootSelected {
+    composes: root;
+}
+
+.image {
+    composes: lg_block from global;
+}
+
+/* For desktop mode where buttons are an image... */
+@media (min-width: 960px) {
+    .rootSelected {
+        composes: root;
+    }
+
+}

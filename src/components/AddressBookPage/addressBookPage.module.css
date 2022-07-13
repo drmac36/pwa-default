@@ -1,0 +1,62 @@
+.root {
+    composes: py-md from global;
+}
+.cont {
+    composes: w-full from global;
+    composes: px-8 from global;
+}
+.row {
+    composes: flex from global;
+    composes: -mx-4 from global;
+}
+.sidebar {
+    composes: w-3/12 from global;
+    composes: px-4 from global;
+}
+.pageContent {
+    composes: flex-1 from global;
+    composes: px-4 from global;
+}
+.heading {
+    composes: text-h2 from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: mb-4 from global;
+    composes: bg-colorGrayBack from global;
+    composes: ps-[20px] from global;
+    composes: py-2 from global;
+    composes: relative from global;
+    composes: before_content-[''] from global;
+    composes: before_absolute from global;
+    composes: before_is-[0px] from global;
+    composes: before_top-[0px] from global;
+    composes: before_bg-colorDefault from global;
+    composes: before_w-1 from global;
+    composes: before_h-full from global;
+}
+.content {
+    composes: gap-xs from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    grid-auto-rows: minmax(6rem, max-content);
+
+    composes: sm_grid-cols-2 from global;
+
+    composes: lg_grid-cols-3 from global;
+}
+
+.addButton {
+    composes: border-2 from global;
+    composes: border-dashed from global;
+    composes: border-subtle from global;
+    composes: font-semibold from global;
+    composes: rounded-md from global;
+    composes: text-brand-dark from global;
+    composes: text-sm from global;
+    transition: border-color 384ms var(--venia-global-anim-standard);
+
+    composes: focus_outline-none from global;
+    composes: focus_shadow-buttonFocus from global;
+
+    composes: hover_border-brand-dark from global;
+}

@@ -1,0 +1,47 @@
+.root {
+    composes: flex from global;
+}
+
+.thumbnailContainer {
+    composes: w-[60px] from global;
+}
+.productInfo {
+    composes: flex-1 from global;
+    composes: px-4 from global;
+}
+.thumbnail {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-subtle from global;
+}
+
+.name {
+    composes: font-semibold from global;
+    composes: mb-2xs from global;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.options {
+    composes: gap-2xs from global;
+    composes: grid from global;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.quantity {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.price {
+    grid-column: 2 / span 1;
+    grid-row: 5 / span 1;
+}
+
+.stockStatus {
+    composes: font-semibold from global;
+    composes: text-error from global;
+    grid-column: 2;
+    grid-row: 6;
+}

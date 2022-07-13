@@ -1,0 +1,57 @@
+.rootc {
+    composes: mt-[5.7rem] from global;
+}
+
+.stockStatusMessageContainer {
+    composes: col-end-span2 from global;
+}
+
+/* TODO @TW: cannot compose */
+.stockStatusMessageContainer:empty {
+    display: none;
+}
+
+.bodys {
+    composes: max-h-[25rem] from global;
+    composes: overflow-y-auto from global;
+    min-height: 10rem;
+}
+
+.quantity {
+    composes: opacity-100 from global;
+    transition-delay: 64ms;
+    transition-duration: 384ms;
+    transition-property: opacity;
+    transition-timing-function: var(--venia-global-anim-standard);
+}
+
+.quantity_loading {
+    composes: quantity;
+
+    composes: opacity-50 from global;
+}
+
+.price {
+    composes: opacity-100 from global;
+    transition-delay: 64ms;
+    transition-duration: 384ms;
+    transition-property: opacity;
+    transition-timing-function: var(--venia-global-anim-standard);
+}
+
+.price_loading {
+    composes: quantity;
+
+    composes: opacity-50 from global;
+}
+
+.emptyCart {
+    composes: gap-md from global;
+    composes: grid from global;
+    composes: p-md from global;
+}
+
+.emptyMessage {
+    composes: font-bold from global;
+    composes: m-auto from global;
+}

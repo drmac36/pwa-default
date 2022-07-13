@@ -1,0 +1,41 @@
+.cont {
+    composes: w-full from global;
+    composes: px-8 from global;
+}
+.row {
+    composes: flex from global;
+    composes: -mx-4 from global;
+}
+.sidebar {
+    composes: w-3/12 from global;
+    composes: px-4 from global;
+    composes: mt-6 from global;
+}
+.root {
+    composes: mt-6 from global;
+    composes: px-4 from global;
+    composes: w-6/12 from global;
+}
+.title {
+    composes: text-h2 from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: mb-4 from global;
+    composes: bg-colorGrayBack from global;
+    composes: ps-[20px] from global;
+    composes: py-2 from global;
+    composes: relative from global;
+    composes: before_content-[''] from global;
+    composes: before_absolute from global;
+    composes: before_is-[0px] from global;
+    composes: before_top-[0px] from global;
+    composes: before_bg-colorDefault from global;
+    composes: before_w-1 from global;
+    composes: before_h-full from global;
+}
+.megaSidebar {
+    composes: w-3/12 from global;
+    composes: px-4 from global;
+    composes: mt-6 from global;
+    composes: pt-[4.5rem] from global;
+}

@@ -1,0 +1,254 @@
+.navigation {
+	list-style: none;
+}
+.submenu{
+	composes: w-full from global;
+	composes: bg-[#fff] from global;
+	composes: dOnly_absolute from global;
+	composes: dOnly_top-full from global;
+	composes: dOnly_is-[0px] from global;
+	composes: items-start from global;
+	composes: hidden from global;
+	composes: z-[10] from global;
+}
+.submenuActive {
+	composes: submenu;
+	composes: mOnly_block from global;
+	composes: w-full from global;
+}
+.ulTop {
+	composes: dOnly_absolute from global;
+	composes: dOnly_is-[0px] from global;
+	composes: dOnly_top-full from global;
+	composes: dOnly_border-[1px] from global;
+	composes: dOnly_min-w-[250px] from global;
+	composes: bg-colorWhite from global;
+	composes: hidden from global;
+	composes: mOnly_w-full from global;
+	composes: z-[10] from global;
+}
+.ulTopOpened {
+	composes: ulTop;
+	composes: mOnly_block from global;
+}
+.ulChild {
+	composes: hidden from global;
+	composes: bg-colorWhite from global;
+	composes: sm_w-full from global;
+	composes: lg_absolute from global;
+	composes: lg_is-[100%] from global;
+	composes: lg_top-[0px] from global;
+	composes: lg_border-[1px] from global;
+	composes: lg_min-w-[250px] from global;
+	composes: mOnly_w-full from global;
+}
+.ulChildOpend {
+	composes: ulChild;
+	composes: mOnly_block from global;
+}
+.childParent, .childMegaParent {
+	composes: text-colorDefault from global;
+	composes: flex from global;
+	composes: flex-wrap from global;
+	composes: relative from global;
+}
+.childMegaParent_col6 {
+	composes: childMegaParent;
+	composes: w-6/12 from global;
+}
+.childMegaParent_col4 {
+	composes: childMegaParent;
+	composes: w-4/12 from global;
+}
+.childMegaParent_col3 {
+	composes: childMegaParent;
+	composes: w-3/12 from global;
+}
+.childMegaParent_full {
+	composes: childMegaParent;
+	composes: w-full from global;
+}
+.childParentOpend {
+	composes: childParent;
+	composes: flex from global;
+}
+.ulMegaChild {
+	composes: w-full from global;
+	composes: relative from global;
+	composes: hidden from global;
+}
+.ulMegaChildOpened {
+	composes: ulMegaChild;
+	display: block !important;
+}
+.childMegaParentOpened {
+	composes: childMegaParent;
+	difplay: flex;
+}
+.topLink {
+	composes: py-[15px] from global;
+	composes: block from global;
+	composes: mOnly_flex-1 from global;
+}
+.topLinkMega {
+	composes: topLink;
+	composes: text-colorPrimary from global;
+	composes: mOnly_flex-1 from global;
+	composes: relative from global;
+}
+.childLink {
+	composes: p-[10px] from global;
+	composes: block from global;
+	composes: flex-1 from global;
+}
+.mega_menu_ul {
+	composes: pUnset from global;
+	composes: top-[auto] from global;
+	composes: left-[auto] from global;
+	composes: flex from global;
+	composes: flex-wrap from global;
+}
+.mega_menu_ul_col6 {
+	composes: mega_menu_ul;
+	composes: w-6/12 from global;
+}
+.mega_menu_ul_col9 {
+	composes: mega_menu_ul;
+	composes: w-9/12 from global;
+}
+.mega_menu_ul_full {
+	composes: mega_menu_ul;
+	composes: w-full from global;
+}
+.mega_menu_ul_col3 {
+	composes: mega_menu_ul;
+	composes: w-3/12 from global;
+}
+.mega_menu_ul_opened {
+	composes: block from global;
+}
+
+.childParent:hover > .ulChild {
+	display: block;
+}
+
+.topParent {
+	composes: mx-5 from global;
+	composes: relative from global;
+	composes: mOnly_flex from global;
+	composes: flex-wrap from global;
+}
+.topParentOpened {
+	composes: topParent;
+	composes: mOnly_block from global;
+}
+.topParent:hover > .ulTop {
+	display: block;
+}
+.mega_menu {
+	composes: mx-5 from global;
+	composes: mOnly_flex from global;
+	composes: flex-wrap from global;
+}
+.mega_menu_opened {
+	composes: mega_menu;
+
+}
+.mega_menu:hover > .submenu {
+	display: flex;
+}
+.menuBtn {
+	composes: w-[30px] from global;
+}
+.menuBtnParent {
+	composes: menuBtn;
+	composes: dOnly_hidden from global;
+}
+.top {
+	composes: mx-5 from global;
+	composes: relative from global;
+}
+.child {
+	composes: w-full from global;
+}
+.childIcon {
+	composes: absolute from global;
+	composes: ie-[5px] from global;
+	composes: top-[10px] from global;
+	composes: primary-anime from global;
+}
+
+.childIconOpened {
+	composes: childIcon;
+	composes: sm_rotate-90 from global;
+	composes: lg_rotate-0 from global;
+}
+.childMegaIconOpened {
+	composes: childIcon;
+	composes: rotate-90 from global;
+}
+.content {
+	composes: w-9/12 from global;
+}
+
+.ribbonContainer {
+	composes: inline-flex from global;
+	composes: justify-center from global;
+	composes: relative from global;
+	composes: ms-[15px] from global;
+	composes: is-full from global;
+}
+.ribbonContainerTop {
+	composes: inline-flex from global;
+	composes: justify-center from global;
+	composes: w-full from global;
+	composes: absolute from global;
+	composes: left-[0px] from global;
+	composes: bottom-full from global;
+}
+.arrowTop {
+    composes: before_top-full from global;
+    composes: before_left-[50%] from global;
+    composes: before_border-[6px] from global;
+    composes: before_border-transparent from global;
+    composes: before_border-solid from global;
+    composes: before_content-[''] from global;
+    composes: before_h-[0px] from global;
+    composes: before_w-[0px] from global;
+    composes: before_absolute from global;
+    composes: before_pointer-events-none from global;
+    composes: before_ml-[-6px] from global;
+    composes: before_border-t-colorParent from global;
+}
+.arrowChild {
+    composes: before_right-full from global;
+    composes: before_top-[50%] from global;
+    composes: before_border-[6px] from global;
+    composes: before_border-transparent from global;
+    composes: before_border-solid from global;
+    composes: before_content-[''] from global;
+    composes: before_h-[0px] from global;
+    composes: before_w-[0px] from global;
+    composes: before_absolute from global;
+    composes: before_pointer-events-none from global;
+    composes: before_mt-[-6px] from global;
+    composes: before_border-r-colorParent from global;
+}
+.ribbon {
+	composes: text-colorWhite from global;
+	composes: text-xs from global;
+	composes: uppercase from global;
+	composes: text-center from global;
+	composes: inline-block from global;
+	composes: px-1 from global;
+	composes: bg-colorParent from global;
+	composes: whitespace-nowrap from global;
+}
+.ribbon_top {
+	composes: ribbon;
+	composes: arrowTop;
+}
+.ribbon_child {
+	composes: ribbon;
+	composes: arrowChild;
+}

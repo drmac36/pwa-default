@@ -1,0 +1,92 @@
+.root {
+    composes: py-md from global;
+}
+
+.cont {
+    composes: w-full from global;
+    composes: px-8 from global;
+}
+.row {
+    composes: flex from global;
+    composes: -mx-4 from global;
+}
+.sidebar {
+    composes: w-3/12 from global;
+    composes: px-4 from global;
+}
+.pageContent {
+    composes: flex-1 from global;
+    composes: px-4 from global;
+}
+
+.emptyHistoryMessage {
+    composes: text-center from global;
+}
+
+.orderHistoryTable {
+    composes: grid from global;
+    composes: gap-y-xs from global;
+}
+
+.filterRow {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: gap-y-xs from global;
+    composes: items-start from global;
+    composes: justify-between from global;
+    composes: mb-8 from global;
+    composes: lg_flex-row from global;
+    composes: lg_gap-y-0 from global;
+    composes: lg_items-center from global;
+}
+
+.pageInfo {
+    composes: text-sm from global;
+}
+
+.search {
+    composes: gap-2xs from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-self-center from global;
+    composes: w-full from global;
+
+    composes: lg_gap-xs from global;
+    composes: lg_justify-self-left from global;
+    composes: lg_w-[22rem] from global;
+}
+
+.searchButton {
+    composes: root_highPriority from '../Button/button.module.css';
+
+    composes: h-[2rem] from global;
+    composes: min-w-[5rem] from global;
+    composes: w-[5rem] from global;
+}
+
+.submitIcon {
+    composes: text-white from global;
+}
+
+.loadMoreButton {
+    composes: root_lowPriority from '../Button/button.module.css';
+
+    composes: justify-self-center from global;
+}
+.heading {
+    composes: text-h2 from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: mb-4 from global;
+    composes: bg-colorGrayBack from global;
+    composes: ps-[20px] from global;
+    composes: py-2 from global;
+    composes: relative from global;
+    composes: before_content-[''] from global;
+    composes: before_absolute from global;
+    composes: before_is-[0px] from global;
+    composes: before_top-[0px] from global;
+    composes: before_bg-colorDefault from global;
+    composes: before_w-1 from global;
+    composes: before_h-full from global;
+}

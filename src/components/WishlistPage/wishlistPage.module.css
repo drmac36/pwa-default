@@ -1,0 +1,53 @@
+.root {
+    composes: py-md from global;
+}
+.cont {
+    composes: w-full from global;
+    composes: px-8 from global;
+}
+.row {
+    composes: flex from global;
+    composes: -mx-4 from global;
+}
+.sidebar {
+    composes: w-3/12 from global;
+    composes: px-4 from global;
+}
+
+.pageContent {
+    composes: flex-1 from global;
+    composes: px-4 from global;
+}
+.heading {
+    composes: text-h2 from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: mb-4 from global;
+    composes: bg-colorGrayBack from global;
+    composes: ps-[20px] from global;
+    composes: py-2 from global;
+    composes: relative from global;
+    composes: before_content-[''] from global;
+    composes: before_absolute from global;
+    composes: before_is-[0px] from global;
+    composes: before_top-[0px] from global;
+    composes: before_bg-colorDefault from global;
+    composes: before_w-1 from global;
+    composes: before_h-full from global;
+}
+
+.errorContainer {
+    composes: justify-self-center from global;
+}
+
+.fetchError {
+    composes: border-l-4 from global;
+    composes: border-solid from global;
+    composes: border-error from global;
+    composes: font-semibold from global;
+    composes: pl-xs from global;
+    composes: pr-0 from global;
+    composes: py-2.5 from global;
+    composes: text-error from global;
+    composes: text-sm from global;
+}
